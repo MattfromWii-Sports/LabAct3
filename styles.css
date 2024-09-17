@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+/* Big font size - 3em */
+/* Medium font size - 1.5em */
+/* Small font size - .75em */
+
+body {
+    width: 100vw;
+    min-height: 100svh;
+    overflow-x: hidden;
+}
+p {
+    font-size: .75rem;
+}
+h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px #000;
+    color: #fad02b;
+}
+nav, footer {
+    width: 100%;   
+    background-color: #004aad;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;   
+    padding: 25px 40px;
+}
+nav a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav .right-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: #fad02b;
+}
+.banner {
+    height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+.left-foot,
+.right-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-foot {
+    align-items: flex-start;
+}
+.right-foot {
+    align-items: flex-end;
+}
+footer p {
+    font-weight: bold;
+}
+
+main {
+    background-image: url(images/bluetile.png);
+    background-repeat: repeat;
+    background-size: 25vw;
+    backface-visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5vh;
+    padding: 30px;
+}
+
+/* Services styles */
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.paw {
+    width: 4rem;
+    transform: rotate(35deg);
+}
+.service-title {
+    font-size: 1.5rem;
+}
+.service-main {
+    background-color: #06397e;
+    width: 40vw;
+    height: 100%;
+    padding: 5px 8px;
+}
+.service-description {
+    font-size: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
