@@ -34,31 +34,33 @@ nav {
     display: flex;
     justify-content: space-between;
     gap: 4rem;   
-    padding: 25px 40px;
     position: sticky;
     top: 0;
     z-index: 1;
+    padding: 4px 1px;
 }
 nav a {
     font-size: 1.5em;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 25px;
 }
-nav .right-nav {
+nav a:hover {
+    background-color: #10458e;
+}
+.right-nav, .left-nav {
     display: flex;
-    gap: 2rem;
 }
-
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fad02b;
+    width: 100%;
 }
 .banner {
-    width: 100%;
+   width: 100%;
 }
 
 footer {
