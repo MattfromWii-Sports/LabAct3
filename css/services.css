@@ -1,0 +1,66 @@
+/* Services styles */
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5vh 2vw;
+    color: white;
+    padding: 2px 40px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.service.last {
+    position: relative;
+    left: 50vw;
+    transform: translateX(-62%);
+}
+.service span {
+    font-weight: bold;
+    font-style: italic;
+}
+.paw {
+    width: 4rem;
+    transform: rotate(35deg);
+}
+
+.service-main {
+    background-color: #06397e;
+    width: 100%;
+    height: 110%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.service-description {
+    align-self: center;
+    max-width: 80%;
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.pictures {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    width: 80%;
+}
+.pictures > img {
+    width: 40%;
+    border: 4px solid #fad02b;
+}
