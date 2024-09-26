@@ -1,117 +1,134 @@
 .contactsMap {
-    margin: auto;
-    width: 85%;
-    height: 450px;
-    display: flex;
+  margin: auto;
+  width: 85%;
+  height: 450px;
+  display: flex;
+}
+
+.contacts {
+  width: 43%;
+  height: 100%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts h3 {
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+
+.address,
+.email,
+.phoneNumber {
+  color: white;
+  font-size: 1.4rem;
+  background-color: #06397e;
+  border-radius: 20px 20px 20px 20px;
+  height: 120px;
+  padding-left: 20px;
+  padding-top: 13px;
+}
+
+#map {
+  height: 100%;
+  border: 6px dashed #fdb12b;
+}
+
+.ad {
+  max-width: 80%;
+  padding: 25px;
+  background-color: #06397e;
+  border: 4px dashed #fdb12b;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 15px;
+}
+.ad:hover {
+  animation-name: popout;
+  animation-duration: 3s;
+}
+
+/* ad animation */
+@keyframes popout {
+  from {
+    transform: scale(1);
   }
-  
-  .contacts {
-    width: 43%;
-    height: 100%;
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    flex-direction: column;
-    justify-content: space-between;
+  70% {
+    transform: scale(1.2);
   }
-  
-  .contacts h3 {
-    font-size: 2.5rem;
-    padding-bottom: 15px;
+  to {
+    transform: scale(1);
   }
-  
-  .address,
-  .email,
-  .phoneNumber {
-    color: white;
-    font-size: 1.4rem;
-    background-color: #06397e;
-    border-radius: 20px 20px 20px 20px;
-    height: 120px;
-    padding-left: 20px;
-    padding-top: 13px;
-  }
-  
-  #map {
-    height: 100%;
-    border: 6px dashed #fdb12b;
-  }
-  
+}
+
+.ad > .ad-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.ad span {
+  margin-right: 5px;
+}
+
+.ad > img {
+  width: 100%;
+  object-fit: cover;
+  align-self: center;
+}
+
+@media (max-width: 600px) {
   .ad {
-    max-width: 80%;
-    padding: 25px;
-    background-color: #06397e;
-    border: 4px dashed #fdb12b;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 15px;
+    grid-template-columns: 1fr;
   }
-  
-  .ad > .ad-title {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 2rem;
-  }
-  
-  .ad span {
-    margin-right: 5px;
-  }
-  
-  .ad > img {
-    width: 100%;
-    object-fit: cover;
-    align-self: center;
-  }
-  
-  @media (max-width: 600px) {
-    .ad {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .ad-text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .ad-text p,
-  .ad span {
-    font-size: 1rem;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    text-wrap: wrap;
-  }
-  
-  .ribbon {
-    width: 100vw;
-    padding: 20px 30px;
-    background-color: #fad02b;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 14px;
-    color: white;
-  }
-  
-  .ribbon p {
-    font-size: 1.5rem;
-  }
-  
-  .ribbon > a {
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-decoration: none;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
-    background-color: #06397e;
-  }
-  
+}
+
+.ad-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ad-text p,
+.ad span {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.ribbon {
+  width: 100vw;
+  padding: 20px 30px;
+  background-color: #fad02b;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+  color: white;
+}
+
+.ribbon p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ribbon > a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #06397e;
+}
