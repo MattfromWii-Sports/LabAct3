@@ -1,13 +1,15 @@
+/* Erwin Styles */
 .contactsMap {
   margin: auto;
   width: 85%;
-  height: 450px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts {
-  width: 43%;
-  height: 100%;
+  width: 600px;
+  min-width: 100px;
+  height: 460px;
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -34,10 +36,13 @@
 }
 
 #map {
-  height: 100%;
+  min-width: 100px;
+  max-width: 700px;
+  aspect-ratio: 3/2;
   border: 6px dashed #fdb12b;
 }
 
+/* Matthew Styles */
 .ad {
   max-width: 80%;
   padding: 25px;

@@ -24,7 +24,7 @@
 .service:hover {
   transform: scale(1.06);
 }
-.service:hover > .paw{
+.service:hover > .paw {
   transform: rotate(80deg);
 }
 
